@@ -1,0 +1,13 @@
+{
+  "featureName": "{{FEATURE_NAME}}",
+  "description": "{{PROJECT_DESCRIPTION}}",
+  "language": "zh-TW",
+  "createdAt": "{{TIMESTAMP}}",
+  "phase": "init",
+  "phases": {
+    "requirements": "pending",
+    "design": "pending",
+    "tasks": "pending",
+    "implementation": "pending"
+  }
+}

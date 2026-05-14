@@ -1,0 +1,30 @@
+{
+  "featureName": "performance-dashboard",
+  "description": "績效管理平台 v3：四大維度評估（工作量/流程效率/專案排程/品質指標），Python FastAPI + Vue 3，串接工單總表（PM+RD）及 Campaign 看板（行銷）。",
+  "language": "zh-TW",
+  "createdAt": "2026-05-13T19:00:00.000Z",
+  "updatedAt": "2026-05-14T11:00:00.000Z",
+  "phase": "tasks-generated",
+  "version": "v3",
+  "techStack": {
+    "backend": "Python 3.12+ / FastAPI",
+    "frontend": "Vue 3 / Vite / Element Plus / ECharts",
+    "architecture": "前後端分離"
+  },
+  "dataScope": {
+    "pm_rd": { "boardId": "7960591450", "name": "工單總表", "items": 895 },
+    "marketing": { "boardId": "18398984308", "name": "Campaign Planning & Status", "items": 115 }
+  },
+  "evaluationDimensions": ["工作量", "流程效率", "專案排程", "品質指標"],
+  "phases": {
+    "requirements": "approved",
+    "design": "approved",
+    "tasks": "generated",
+    "implementation": "pending"
+  },
+  "approvals": {
+    "requirements": { "generated": true, "approved": true },
+    "design": { "generated": true, "approved": true },
+    "tasks": { "generated": true, "approved": false }
+  }
+}
