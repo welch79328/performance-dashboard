@@ -73,26 +73,26 @@ function platformDistribution() {
       <div class="grid grid-cols-2 md:grid-cols-5 gap-4" v-if="workload && !isMarketing">
         <el-card shadow="hover">
           <div class="text-center">
-            <div class="text-2xl font-bold text-blue-600">{{ workload.total_count }}</div>
-            <div class="text-xs text-gray-500">總工單量</div>
+            <div class="text-2xl font-bold text-blue-600">{{ workload.unique_count }}</div>
+            <div class="text-xs text-gray-500">實際工單數</div>
           </div>
         </el-card>
         <el-card shadow="hover">
           <div class="text-center">
             <div class="text-2xl font-bold text-purple-600">{{ workload.pm_count }}</div>
-            <div class="text-xs text-gray-500">PM</div>
+            <div class="text-xs text-gray-500">PM 參與</div>
           </div>
         </el-card>
         <el-card shadow="hover">
           <div class="text-center">
             <div class="text-2xl font-bold text-orange-600">{{ workload.dev_count }}</div>
-            <div class="text-xs text-gray-500">開發</div>
+            <div class="text-xs text-gray-500">開發參與</div>
           </div>
         </el-card>
         <el-card shadow="hover">
           <div class="text-center">
             <div class="text-2xl font-bold text-green-600">{{ workload.test_count }}</div>
-            <div class="text-xs text-gray-500">測試</div>
+            <div class="text-xs text-gray-500">測試參與</div>
           </div>
         </el-card>
         <el-card shadow="hover">

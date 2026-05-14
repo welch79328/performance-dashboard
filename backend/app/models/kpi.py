@@ -7,11 +7,12 @@ from pydantic import BaseModel
 
 class PersonWorkload(BaseModel):
     user_name: str
-    pm_count: int = 0
-    dev_count: int = 0
-    test_count: int = 0
-    total_count: int = 0
-    in_progress_count: int = 0
+    unique_count: int = 0       # 實際負責工單數（去重）
+    pm_count: int = 0           # 角色參與：PM 次數
+    dev_count: int = 0          # 角色參與：開發次數
+    test_count: int = 0         # 角色參與：測試次數
+    total_count: int = 0        # 角色參與總次數（pm+dev+test，可能 > unique_count）
+    in_progress_count: int = 0  # 在手未結案量（去重）
 
 
 class MarketingWorkload(BaseModel):

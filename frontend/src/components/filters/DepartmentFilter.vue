@@ -6,7 +6,6 @@ const filters = useFiltersStore()
 const options = [
   { label: 'PM + RD', value: 'pm_rd' },
   { label: '行銷', value: 'marketing' },
-  { label: '全部', value: 'all' },
 ]
 </script>
 

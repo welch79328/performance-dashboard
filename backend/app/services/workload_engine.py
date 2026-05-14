@@ -21,7 +21,8 @@ def calculate_person_workload(
     pm_count = 0
     dev_count = 0
     test_count = 0
-    in_progress = 0
+    unique_ids: set[str] = set()
+    in_progress_ids: set[str] = set()
 
     for o in orders:
         is_related = False
@@ -35,16 +36,19 @@ def calculate_person_workload(
             test_count += 1
             is_related = True
 
-        if is_related and o.status != "已結案":
-            in_progress += 1
+        if is_related:
+            unique_ids.add(o.id)
+            if o.status != "已結案":
+                in_progress_ids.add(o.id)
 
     return PersonWorkload(
         user_name=person_name,
+        unique_count=len(unique_ids),
         pm_count=pm_count,
         dev_count=dev_count,
         test_count=test_count,
         total_count=pm_count + dev_count + test_count,
-        in_progress_count=in_progress,
+        in_progress_count=len(in_progress_ids),
     )
 
 
