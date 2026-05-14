@@ -18,3 +18,9 @@ frontend/dist/
 
 # Claude
 .claude/
+
+# Data files
+*.xlsx
+
+# Docker volumes
+pgdata/

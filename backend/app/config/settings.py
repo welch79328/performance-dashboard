@@ -8,6 +8,8 @@ class Settings(BaseSettings):
     jwt_expire_minutes: int = 480
     users_config: str = "[]"
     cache_ttl_seconds: int = 900  # 15 minutes
+    database_url: str = "postgresql+asyncpg://perf:perf123@localhost:5432/performance"
+    sync_interval_minutes: int = 15
 
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 
